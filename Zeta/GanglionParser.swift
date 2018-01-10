@@ -2,7 +2,7 @@
 //  GanglionParser.swift
 //  Zeta
 //
-//  Created by jeremy thiriez on 21/12/2017.
+//  Created by Nathan on 21/12/2017.
 //  Copyright © 2017 jeremy thiriez. All rights reserved.
 //
 
