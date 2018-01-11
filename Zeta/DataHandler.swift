@@ -96,10 +96,10 @@ public class DataHandler : NSObject
                 //print("fft chan[\(k)]: \(fftArray[k][j])")
             }
         }
-        return ComputeAverageAlpha(fftArray: fftArray) / ComputeAverageBeta(fftArray: fftArray);
+        return ComputeAverageAlpha(fftArray: fftArray) / ComputeAverageDelta(fftArray: fftArray);
     }
     
-    private func ComputeAverageBeta(fftArray: [[Float]]) -> Float {
+    private func ComputeAverageDelta(fftArray: [[Float]]) -> Float {
         var value: Float = 0
         
         for i in 0..<4 {
@@ -107,8 +107,8 @@ public class DataHandler : NSObject
                 value += fftArray[i][j]
             }
         }
-        // MARK: print Average Beta
-        //print("Average Beta: \(value / 16)")
+        // MARK: print Average Delta
+        //print("Average Delta: \(value / 16)")
         return value / 16
     }
     
